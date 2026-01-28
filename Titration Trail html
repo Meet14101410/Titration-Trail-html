@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Titration Trail</title>
+</head>
+<body style="text-align:center;font-family:Arial;">
+  <h1>🧪 Titration Trail</h1>
+  <p>Add drops until the solution turns pink!</p>
+
+  <h2 id="drops">Drops: 0</h2>
+  <button onclick="addDrop()">Add Drop</button>
+
+  <script>
+    let drops = 0;
+    function addDrop(){
+      drops++;
+      document.getElementById("drops").innerText = "Drops: " + drops;
+      if(drops === 5) alert("🎉 Endpoint reached!");
+    }
+  </script>
+</body>
+</html>
