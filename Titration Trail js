@@ -1,0 +1,10 @@
+let drops = 0;
+
+function addDrop(){
+  drops++;
+  document.getElementById("drops").innerText = "Drops: " + drops;
+
+  if(drops === 5){
+    alert("🎉 Endpoint reached!");
+  }
+}
